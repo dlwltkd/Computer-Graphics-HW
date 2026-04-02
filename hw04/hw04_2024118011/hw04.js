@@ -89,8 +89,7 @@ function render(currentTime) {
     const mL = mat4.create();
     mat4.translate(mL, mL, [0.0, 0.5, 0]);
     mat4.scale(mL, mL, [0.5, 0.5, 1]);
-    mat4.rotate(mL, mL, angleBig, [0, 0, 1]);
-    mat4.rotate(mL, mL, Math.PI / 2, [0, 0, 1]);
+    mat4.rotate(mL, mL, angleBig + Math.PI / 2, [0, 0, 1]);
     shader.setMat4("u_transform", mL);
     shader.setVec4("u_color", [1.0, 1.0, 1.0, 1.0]);
     gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);
