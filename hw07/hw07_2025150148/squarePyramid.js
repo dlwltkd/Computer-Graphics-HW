@@ -61,23 +61,23 @@ export class SquarePyramid {
 
         this.texCoords = new Float32Array([
             // front face (v0,v2,v3)
-            // apex, left-front, right-front
-            0.5, 1,   0, 0,   1, 0,
+            // u: 0.00 ~ 0.25
+            0.125, 1,   0.00, 0,   0.25, 0,
 
             // right face (v0,v3,v4)
-            // apex, right-front, right-back
-            0.5, 1,   0, 0,   1, 0,
+            // u: 0.25 ~ 0.50
+            0.375, 1,   0.25, 0,   0.50, 0,
 
             // left face (v0,v1,v2)
-            // apex, left-back, left-front
-            0.5, 1,   0, 0,   1, 0,
+            // u: 0.75 ~ 1.00
+            0.875, 1,   0.75, 0,   1.00, 0,
 
             // back face (v0,v4,v1)
-            // apex, right-back, left-back
-            0.5, 1,   0, 0,   1, 0,
+            // u: 0.50 ~ 0.75
+            0.625, 1,   0.50, 0,   0.75, 0,
 
             // bottom face (v1,v4,v3,v2)
-            // left-back, right-back, right-front, left-front
+            // use whole texture image
             0, 1,   1, 1,   1, 0,   0, 0
         ]);
 
