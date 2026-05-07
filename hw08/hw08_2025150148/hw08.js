@@ -92,7 +92,7 @@ function setupKeyboardEvents() {
         else if (event.key == 'g') {
             shader.use();
             shader.setFloat("isP", 0.0);
-            shadingMode2 = "GOUDRAUD";
+            shadingMode2 = "GOURAUD";
             updateText(textOverlay3, "shading mode: " + shadingMode + "("+shadingMode2+")");
 
 
