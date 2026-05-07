@@ -41,7 +41,7 @@ const lightSize = vec3.fromValues(0.1, 0.1, 0.1);
 
 // Arcball object: initial distance 5.0, rotation sensitivity 2.0, zoom sensitivity 0.0005
 // default of rotation sensitivity = 1.5, default of zoom sensitivity = 0.001
-const arcball = new Arcball(canvas, 5.0, { rotation: 2.0, zoom: 0.0005 });
+const arcball = new Arcball(canvas, 3.0, { rotation: 2.0, zoom: 0.0005 });
 
 document.addEventListener('DOMContentLoaded', () => {
     if (isInitialized) {
